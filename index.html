@@ -14,9 +14,11 @@
     }
 
     body {
-      background-color: #f7f9fc;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
       line-height: 1.6;
+      font-family: "Segoe UI", sans-serif;
     }
 
     header {
@@ -138,6 +140,7 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="College Compass Logo" style="height: 60px; margin-bottom: 10px;">
     <h1>College Compass</h1>
     <nav>
       <ul>
@@ -151,32 +154,31 @@
     </nav>
   </header>
 
-  <section id="home" class="active">
-    <h2>Welcome Students!</h2>
-    <div class="link-grid">
-      <a href="#" onclick="showSection('announcements')">📢 Announcements</a>
-      <a href="#" onclick="showSection('notes')">📄 Notes</a>
-      <a href="#" onclick="showSection('timetable')">📅 Timetable</a>
-      <a href="#" onclick="showSection('instructions')">📘 Instructions</a>
-      <a href="#" onclick="showSection('clubs')">🎯 Club Activities</a>
-    </div>
-  </section>
+  $1
 
-  <section id="announcements">
+<section id="group-photo">
+  <div style="text-align: center; margin-top: 2rem;">
+    <img src="group-photo.jpg" alt="Group Photo" style="max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  </div>
+</section>
+
+
+
+<section id="announcements">
     <h2>Latest Announcements</h2>
     <ul>
-      <li>⚠️ Open house on saturday 12th april.</li>
-      <li>📢 Holiday on monday 14th april.</li>
-      <li>✅ Please submit all academic reviews.(East or west tike sir is best )</li>
+      <li>⚠️ Midterm exams start from 15th April.</li>
+      <li>📢 Tech Fest registration is now open.</li>
+      <li>✅ Lab manuals due by 12th April.</li>
     </ul>
   </section>
 
   <section id="notes">
     <h2>Notes</h2>
     <ul>
-      <li><a href="#">📄 SIC Module 2 </a></li>
-      <li><a href="#">📄 IIDTL report format</a></li>
-      <li><a href="#">📄 CST module 2 </a></li>
+      <li><a href="#">📄 Maths - Unit 1 Notes</a></li>
+      <li><a href="#">📄 Physics - Lab Manual</a></li>
+      <li><a href="#">📄 C Programming Basics</a></li>
     </ul>
   </section>
 
@@ -189,25 +191,32 @@
   <section id="instructions">
     <h2>Important Instructions</h2>
     <ol>
-      <li>Be punctual for labs and lectures.80% attendance is mandatory for all students</li>
-      <li>Please don't use mobile phonesss during lecture .</li>
-      <li>IIDTL project submission today !!!!!</li>
+      <li>Be punctual for labs and lectures.</li>
+      <li>Submit assignments before deadlines.</li>
+      <li>Maintain 75% attendance minimum.</li>
     </ol>
   </section>
 
   <section id="clubs">
     <h2>Today's Club Activities</h2>
     <ul>
-      <li>🎮 ACM  - ML session at 4 pm today</li>
-      <li>🎤 Art Circle - Rehearsals for abhivyakti play at 3 PM in Auditorium</li>
-      <li>📸 Sports club CCA submisiion last day today</li>
-      <li>💻 Guest lecture at ENTC seminar hall</li>
+      <li>🎮 Gaming Club - Valorant Tournament at 4 PM in Lab 5</li>
+      <li>🎤 Drama Club - Rehearsals for annual play at 3 PM in Auditorium</li>
+      <li>📸 Photography Club - Photo Walk at 5 PM, starting from Main Gate</li>
+      <li>💻 Coding Club - Web Dev Workshop at 6 PM in Seminar Hall</li>
     </ul>
   </section>
-
-  <footer>
-    <p>&copy; 2025 College Compass. All rights reserved.</p>
-  </footer>
+<section id="group-photo">
+  <div style="text-align: center; margin-top: 2rem;">
+    <img src="group-photo.jpg" alt="Group Photo" style="max-width: 90%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+    <p style="margin-top: 0.5rem; color: #2b6cb0; font-weight: 500;">Team - IIDTL Group Project</p>
+  </div>
+</section>
+$2
+  <p>&copy; 2025 College Compass. All rights reserved.</p>
+  <p>An IIDTL group project by Chaitanya A6</p>
+  <p>Designed with ❤️ by Chaitanya</p>
+</footer>
 
   <script>
     function showSection(id) {
